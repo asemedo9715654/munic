@@ -1,4 +1,7 @@
-<h1>Chatty</h1>
-<div ng-repeat="room in rooms">
-  <h2>{{room.name}}</h2>
+<link rel="stylesheet" type="text/css" href="styles/home.css">
+<div class="side-bar">
+  <h1 class="title">MUNIC</h1>
+  <div class="room-names" ng-repeat="room in rooms">
+    <h4>{{room.name}}</h4>
+  </div>
 </div>
