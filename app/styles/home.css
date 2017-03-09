@@ -5,10 +5,14 @@
 }
 
 .title {
-    text-align: center;
     margin-top: 0;
+    text-align: center;
 }
 
 .room-names {
     margin-left: 1em;
+}
+
+.new-room-button {
+    align-content: center;
 }
