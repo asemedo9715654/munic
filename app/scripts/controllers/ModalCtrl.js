@@ -1,7 +1,7 @@
 (function() {
     function ModalCtrl($scope, Room) {
         $scope.createRoom = function() {
-             
+            Room.createRoom();
         }
         
         $scope.cancel = function() {

@@ -2,7 +2,10 @@
   function Room($firebaseArray) {
     var ref = firebase.database().ref().child("rooms");
     var rooms = $firebaseArray(ref);
-    rooms.$add({ name: "newRoom" });
+      
+    Room.createRoom = function($scope.roomName) {
+        rooms.$add({{ roomName }});
+    }
     
     return {
       all: rooms
