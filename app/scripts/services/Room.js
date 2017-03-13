@@ -3,11 +3,11 @@
     var ref = firebase.database().ref().child("rooms");
     var rooms = $firebaseArray(ref);
       
-//    var createRoom = function(roomName) {
-//        $scope.rooms.$add($scope.roomName);
-//    }
+    var createRoom = function(roomName, $scope) {
+        $scope.rooms.$add($scope.roomName);
+    }
     
-    return {all: rooms}
+    return {all: rooms, addRoomToFirebase: createRoom}
   }
 
   angular

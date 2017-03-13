@@ -4,8 +4,7 @@
         $scope.rooms = Room.all;
         
         $scope.createRoom = function(roomName) {
-//            Room.createRoom(roomName);
-            $scope.rooms.$add($scope.roomName);
+            Room.addRoomToFirebase(roomName, $scope);
             $uibModalInstance.close();
         }
         
