@@ -1,7 +1,8 @@
 .side-bar {
     background-color: grey;
-    width: 20em;
-    height: 100em;
+    width: 18vw;
+    height: 100vh;
+    display: inline-block;
 }
 
 .title {
@@ -15,4 +16,16 @@
 
 .new-room-button {
     align-content: center;
+}
+
+.room {
+/*    display: inline-block;*/
+    background-color: lightgray;
+    height: 100vh;
+    width: 82vw;
+    float: right;
+}
+
+.room-title {
+    text-align: center;
 }
