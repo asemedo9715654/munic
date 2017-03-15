@@ -8,10 +8,8 @@
           })
       };
       
-      $scope.messages = Message.messages;
-      $scope.showActiveRoom = function(roomName) {
-          Message.getRoomById(roomName);
-      };
+      $scope.Message = Message;
+      
   }
 
   angular
