@@ -6,12 +6,12 @@
         <button class="new-room-button" ng-click="openModal()">New Room</button>
         </div>
         <div class="room-names" ng-repeat="room in rooms">
-        <h4>{{room.$value}}</h4>
+            <div ng-click="showActiveRoom(room.$name)">
+                <div>{{room.$value}}</div>
+            </div>
         </div>
     </div>
-    <div class="room">
-        <h1 class="room-title">Room 1</h1>
+    <div class="room" ng-repeat="message in messages">
+        <p>{{message.content}}</p>
     </div>
 </div>
-
-

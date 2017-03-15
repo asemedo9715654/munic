@@ -1,13 +1,14 @@
 (function() {
   function Room($firebaseArray) {
+    var Room = {};
     var ref = firebase.database().ref().child("rooms");
-    var rooms = $firebaseArray(ref);
+    Room.all = $firebaseArray(ref);
       
-    var createRoom = function(roomName, $scope) {
-        $scope.rooms.$add($scope.roomName);
+    Room.addRoomToFirebase = function($scope) {
+        Room.all.$add($scope.roomName);
     }
     
-    return {all: rooms, addRoomToFirebase: createRoom}
+    return Room
   }
 
   angular
