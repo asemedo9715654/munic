@@ -1,7 +1,7 @@
 <h1>Set a username</h1>
 <div>This name will appear when you send messages</div>
 <div>
-    <input>
+    <input ng-model="userName">
     <br>
-    <button>Set username</button>
+    <button ng-click="createUser(userName)">Set username</button>
 </div>

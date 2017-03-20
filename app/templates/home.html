@@ -3,13 +3,16 @@
     <div class="side-bar">
         <h1 class="title">MUNIC</h1>
         <div>
-        <button class="new-room-button" ng-click="openModal()">New Room</button>
+        <div>Username: {{userName}}</div>
         </div>
+        <button ng-click="signIn()">Sign In</button>
+        <button ng-click="signOut()">Sign Out</button>
         <div class="room-names" ng-repeat="room in rooms">
             <div ng-click="Message.getRoomById(room.$id)">
                 <div>{{room.$value}}</div>
             </div>
         </div>
+        <button class="new-room-button" ng-click="createRoom()">New Room</button>
     </div>
     <div class="room">
         <p ng-repeat="message in Message.messages">{{message.content}}</p>
