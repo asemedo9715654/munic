@@ -3,7 +3,7 @@
     <div class="side-bar">
         <h1 class="title">MUNIC</h1>
         <div>
-        <div>Username: {{userName}}</div>
+            <div>Username: {{userName}}</div>
         </div>
         <button ng-click="signIn()">Sign In</button>
         <button ng-click="signOut()">Sign Out</button>
@@ -16,5 +16,9 @@
     </div>
     <div class="room">
         <p ng-repeat="message in Message.messages">{{message.content}}</p>
+    </div>
+    <div>
+        <input ng-model="message" class="message-input">
+        <button ng-click="send(message)">Send</button>
     </div>
 </div>

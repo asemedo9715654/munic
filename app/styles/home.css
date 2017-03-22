@@ -28,5 +28,9 @@
 
 .room-title {
     text-align: center;
-    
 }
+
+.message-input {
+    width: 96vw;
+}
+

@@ -10,6 +10,11 @@
 
         }
         
+        Message.sendMessage = function(message) {
+            var messageRef = ref.orderByChild("content");
+            Message.messages = $firebaseArray(messageRef);
+        }
+        
         return Message;
         
     }

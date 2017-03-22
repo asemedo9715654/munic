@@ -26,7 +26,11 @@
       $scope.signOut = function() {
           $cookies.put('blocChatCurrentUser', 'Guest');
           $scope.userName = $cookies.get('blocChatCurrentUser')
-      }
+      };
+      
+      $scope.send = function(message) {
+          Message.sendMessage(message);
+      };
       
   }
 
