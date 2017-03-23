@@ -8,11 +8,13 @@
         Message.getRoomById = function(roomName) {
             var roomRef = ref.orderByChild("roomId").equalTo(roomName);
             Message.messages = $firebaseArray(roomRef);
+            Message.roomId = roomName
         }
         
         Message.sendMessage = function(message) {
             var newMessage = {
                 content: message,
+                roomId: Message.roomId,
                 username: $cookies.get("blocChatCurrentUser")
             };
             
