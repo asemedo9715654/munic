@@ -15,10 +15,15 @@
         <button class="new-room-button" ng-click="createRoom()">New Room</button>
     </div>
     <div class="room">
-        <p ng-repeat="message in Message.messages">{{message.username}}: {{message.content}}</p>
+        <p ng-repeat="message in Message.messages">
+            {{ message.username }}: {{ message.content }}
+        </p>
     </div>
     <div>
         <input ng-model="message" class="message-input">
         <button ng-click="send(message)">Send</button>
     </div>
 </div>
+
+
+
