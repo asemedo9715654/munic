@@ -20,8 +20,10 @@
         </p>
     </div>
     <div>
-        <input ng-model="message" class="message-input">
-        <button ng-click="send(message)">Send</button>
+        <form>
+            <input ng-model="message" class="message-input" type="text">
+            <button ng-click="send(message)" type="submit" value="submit">Send</button>
+        </form>
     </div>
 </div>
 
